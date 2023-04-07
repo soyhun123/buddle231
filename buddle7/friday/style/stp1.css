@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.section {
+  /* background-color: red; */
+}
+
+.container {
+  --pinline: 24px;
+  /* background-color: gold; */
+  margin-inline: auto;
+  max-width: calc(1200px + 2 * var(--pinline));
+  padding-inline: var(--pinline);
+}
+
+.wrapper {
+  padding-block: 64px;
+  /* background-color: blue; */
+}
+
+.button {
+  font-size: 18px;
+  background-color: steelblue;
+  color: white;
+  padding: 8px 16px;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+.felx {
+  margin-inline: auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.felx h2 {
+  margin-bottom: 24px;
+}
+
+.felx--dir-column {
+  flex-direction: column;
+}
+
+.felx p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.felx .button {
+  margin-bottom: 36px;
+}
+
+.video {
+  background-color: aquamarine;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+/* 
+aspect-ratio: ; 가로세로비를 자동으로 맞춰줌
+부모가 플렉스인경우 사이즈가 딱 맞게 변하기 때문에 아무것도 없는 div설정은 0이 됨
+
+.wrapper h2,
+.wrapper p {
+  text-align: center;
+
+.button {
+  font-size: 18px;
+  background-color: steelblue;
+  color: white;
+  padding: 8px 16px;
+  text-transform: capitalize; 이게 뭐였지
+  font-weight: 700; 폰트 두께
+  text-align: center; 폰트 정렬
+  width: fit-content; 폰트 백그라운드 폰트에 맞춰 핏
+  border-radius: 8px; 둥글게
+
+
+제어해야 하는 것 컨테이너
+디브는 끝도없이 늘어나니까...
+max-width 는 늘어나는 제한을 걸어둠
+플렉스를 써서 가운데 정렬 가능함. but 안 쓰는게 나음
+예전엔 마진을 썼다
+margin: 0 auto;
+margin left~쩌고 
+
+margin-inline: auto;요즘엔 이거 쓴다.
+padding-inline: 24px;   이거 쓰면 컨테이너가 보이네?
+
+inline-좌우
+block-상하
+
+width와 padding은 함께 사용되는거임 그러니 여백 공간이 둘 다 작동하므로 어떤 식으로 작업할지 정해야 함
+계산잘하시고요...
+
+content-box-   기준이글자 사이즈(?)
+border-box     기준이 보더 사이즈
+
+--pinline: 24px;
+  background-color: gold;
+  max-width: calc(1200px + 2 * var(--pinline));
+  margin-inline: auto;
+  padding-inline: var(--pinline);
+
+  --pinline: 24px;
+  이거 쓰면 자동으로 가능함. 사이즈 계산 안해도 괜찮고... 공식을해라!
+
+ */
