@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* color: white; */
+}
+
+.section {
+  /* background-color: rgb(243, 176, 176); */
+}
+
+.container {
+  /* background-color: rgb(94, 177, 149); */
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.wrapper {
+  /* background-color: rgb(167, 167, 223); */
+  padding-block: 64px;
+}
+
+.nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-block: 12px;
+}
+
+.nav .nav__menuWrapper {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+
+.button {
+  background-color: slateblue;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+/* .nav .container {
+    background-color: grey;
+} */
+
+/* .nav__menu {
+  color: white;
+
+  css에는 상속이라는 개념이 있어서 따로 지정하지 않는 이상 위에 지정된 css에서 사용된 ()가 사용됨
+  근데 안 되는 것도 있음
+  디스플레이플렉스라던지,..
+  승계되는 옵션: 텍스트에 적용되는 거 
+} */

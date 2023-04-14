@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+}
+
+.section {
+  background-color: rgb(243, 176, 176);
+}
+
+.container {
+  background-color: rgb(94, 177, 149);
+  max-width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* margin: 0 auto; */
+  margin-inline: auto;
+  /* padding: 0 24px; */
+  /* padding-left: 24px;
+  padding-right: 24px; */
+  padding-inline: 24px;
+}
+
+.wrapper {
+  background-color: rgb(167, 167, 223);
+  /* padding: 64px 0; */
+  /* padding-top: 64px;
+  padding-bottom: 64px; */
+  padding-block: 64px;
+}
+
+/* *<모든 것. 하지만 마진과 패딩에 0을 넣으면 h1의 요소도 사라져서 주의가 필요함 */
