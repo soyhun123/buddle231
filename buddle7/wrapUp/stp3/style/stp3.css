@@ -13,14 +13,10 @@ body {
 }
 
 .container {
-  /* background-color: rgb(94, 177, 149); */
-  /* max-width: 1200px; */
-  /* max-width: calc(1200px + 2 * 24px); */
   --budlele: 24px;
   max-width: calc(1200px + 2 * var(--budlele));
   margin-inline: auto;
   padding-inline: var(--budlele);
-  /* padding-inline: 24px; */
 }
 
 .wrapper {
@@ -48,19 +44,29 @@ body {
 }
 
 .button {
+  width: fit-content;
   background-color: slateblue;
   padding: 8px 16px;
   border-radius: 8px;
-}
-/* .nav .container {
-    background-color: grey;
-} */
-
-/* .nav__menu {
   color: white;
+  font-weight: 700;
+  text-align: center;
+  /* 부모가 플렉스가 되면 자식 디브는 가능한 겸손하게 사이즈를 줄임
+  ID에 해당하는 것은 #으로..
+  병렬하지 않고 붙여쓰면 안된다
+  */
+}
 
-  css에는 상속이라는 개념이 있어서 따로 지정하지 않는 이상 위에 지정된 css에서 사용된 ()가 사용됨
-  근데 안 되는 것도 있음
-  디스플레이플렉스라던지,..
-  승계되는 옵션: 텍스트에 적용되는 거 
+.button--type-text {
+  color: slateblue;
+  background-color: unset;
+  padding-inline: unset;
+}
+
+/* #hero1 .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 얼라인 아이템은 90도 방향으로 방향 잡아주는 것. 센터로 잡아주면 겸손해짐 
+  근데 그냥 가로일 경우에도 div는 겸손해짐
 } */

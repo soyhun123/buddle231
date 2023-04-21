@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>objective1 - step1</title>
-    <link rel="stylesheet" href="style/stp1.css" />
+    <title>objective1 - step4</title>
+    <link rel="stylesheet" href="style/stp4.css" />
+    <!-- scss는 html이 읽지 못함.
+    근데 왜?
+  scss를 컴퓨터가 읽어서 css를 세이브할때마다 자동으로 붙여주기 위해 사용! 
+라이브서버랑 비슷하게 작동함. 세이브하면 작동하고...
+watch sass를 켜놔야 정상적으로 작동함-->
   </head>
   <body>
     <div class="section nav">
@@ -26,17 +31,27 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div id="hero1" class="section main">
       <div class="container">
-        <div class="wrapper">section2</div>
+        <div class="wrapper">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur, quos. Ab hic, minus libero et eum quia repellendus
+            illo amet?
+          </p>
+          <div class="button">try it now</div>
+          <div class="button button--type-text">learn more</div>
+          <div class="nav__media">mediagoeshere</div>
+        </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section main">
       <div class="container">
         <div class="wrapper">section3</div>
       </div>
     </div>
-    <div class="section">
+    <div class="section main">
       <div class="container">
         <div class="wrapper"></div>
       </div>
