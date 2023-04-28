@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  margin-inline: auto;
+  background-color: black;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  padding: 8px 16px;
+}
+.title .middleTitle {
+  font-size: 15px;
+  padding: 8px 16px;
+}
+
+.contein {
+  padding: 30px 40px a;
+  padding-text-decoration: none;
+  padding-color: black;
+}
+.contein .Link {
+  text-align: left;
+  padding: 10px 10px;
+  justify-content: space-between;
+  font-size: 30px;
+  background-color: gray;
+}
+.contein li {
+  display: flex;
+  align-items: center;
+  padding: 4px 40px;
+  list-style: none;
+}/*# sourceMappingURL=objective1.css.map */

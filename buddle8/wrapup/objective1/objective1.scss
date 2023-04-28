@@ -49,6 +49,17 @@
     gap: 24px;
     align-items: baseline;
   }
+  .lt680px {
+    display: none;
+  }
+  @container nav (width < 42.5rem) {
+    &__menuWrapper {
+      display: none;
+    }
+    .lt680px {
+      display: unset;
+    }
+  }
 }
 
 .main {
@@ -167,6 +178,14 @@
     gap: 8px;
     align-items: center;
     margin-bottom: 0.5rem;
+  }
+  @container footer (width < 44.375rem) {
+    .column:first-of-type {
+      grid-row: 1 / span 2;
+    }
+    .wrapper {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
   // .column ul:last-child > a > li {
   //   margin-bottom: auto;
