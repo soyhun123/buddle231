@@ -23,14 +23,16 @@
     color: black;
   }
   .Link {
-    text-align: left;
-    padding: 10px 10px;
-    justify-content: space-between;
-    font-size: 30px;
+    font-style: italic;
+    padding: 40px 30px;
+    font-size: 18px;
+  }
+
+  .ul {
+    text-align: center;
   }
   li {
     display: flex;
-    align-items: center;
     padding: 4px 40px;
     list-style: none;
   }
